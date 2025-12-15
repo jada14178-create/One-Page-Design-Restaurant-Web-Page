@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jade Thai Kitchen | Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="w3-light-grey">
+
+<!-- NAVIGATION -->
+<div class="w3-top">
+  <div class="w3-bar w3-card fancy-nav w3-padding-large">
+    <a href="#home" class="w3-bar-item w3-button logo"> Jade Thai Kitchen</a>
+    <div class="w3-right w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button fancy-link">Home</a>
+        <a href="#menu" class="w3-bar-item w3-button fancy-link">Menu</a>
+        <a href="#gallery" class="w3-bar-item w3-button fancy-link">Gallery</a>
+        <a href="#about" class="w3-bar-item w3-button fancy-link">About</a>
+        <a href="#contact" class="w3-bar-item w3-button fancy-link">Contact</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMobileMenu()">☰</a>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#home" class="w3-bar-item w3-button fancy-link">Home</a>
+      <a href="#menu" class="w3-bar-item w3-button fancy-link">Menu</a>
+      <a href="#gallery" class="w3-bar-item w3-button fancy-link">Gallery</a>
+      <a href="#about" class="w3-bar-item w3-button fancy-link">About</a>
+      <a href="#contact" class="w3-bar-item w3-button fancy-link">Contact</a>
+  </div>
+</div>
+
+<script>
+function toggleMobileMenu() {
+  var x = document.getElementById("mobileMenu");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<!-- HERO / WELCOME -->
+<header id="home" class="w3-display-container">
+    <img src="images/thai-food-hero-image.jpg" alt="Thai food spread" style="width:100%; height:60vh; object-fit:cover;">
+    <div class="w3-display-middle w3-center w3-text-black">
+        <h1 class="w3-xxlarge">Welcome to Jade Thai Kitchen</h1>
+        <p class="w3-large">Authentic Thai flavors made with love</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="w3-container w3-padding-64 w3-white">
+    <h2 class="w3-center">About Us</h2>
+    <p class="w3-center w3-large w3-text-black">
+        At <strong>Jade Thai Kitchen</strong>, we bring the vibrant flavors of Thailand to your table.  
+        Our chefs use fresh, locally sourced ingredients combined with traditional Thai spices  
+        to create dishes that are both authentic and memorable.  
+    </p>
+    <p class="w3-center w3-large w3-text-black">
+        From aromatic curries to zesty salads, each meal is carefully prepared to balance taste,  
+        color, and texture — honoring Thailand’s culinary heritage.  
+        We strive to make every dining experience warm, welcoming, and full of flavor.
+    </p>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="w3-container w3-padding-64 w3-white">
+    <h2 class="w3-center">Our Menu</h2>
+
+    <!-- BREAKFAST -->
+    <h3 class="w3-center w3-padding-16">Breakfast</h3>
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/istockphoto-667682480-612x612.jpg" alt="Thai Omelet">
+                <div class="w3-container">
+                    <h4>Thai Omelet</h4>
+                    <p class="w3-text-grey">Fluffy omelet with herbs and jasmine rice</p>
+                    <p><strong>$7.50</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Rice Soup.jpg" alt="Rice Soup">
+                <div class="w3-container">
+                    <h4>Rice Soup</h4>
+                    <p class="w3-text-grey">Warm rice porridge with ginger and scallions</p>
+                    <p><strong>$6.50</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Thai Toast.jpg" alt="Thai Toast">
+                <div class="w3-container">
+                    <h4>Thai Toast</h4>
+                    <p class="w3-text-grey">Crispy toast with coconut custard</p>
+                    <p><strong>$5.50</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LUNCH -->
+    <h3 class="w3-center w3-padding-32">Lunch</h3>
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Pad Thai.jpg" alt="Pad Thai">
+                <div class="w3-container">
+                    <h4>Pad Thai</h4>
+                    <p class="w3-text-grey">Rice noodles, tamarind sauce, peanuts</p>
+                    <p><strong>$12.00</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Papaya Salad.jpg" alt="Papaya Salad">
+                <div class="w3-container">
+                    <h4>Papaya Salad</h4>
+                    <p class="w3-text-grey">Shredded papaya, lime, chili, fish sauce</p>
+                    <p><strong>$10.00</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Thai Basil Chicken.jpg" alt="Thai Basil Chicken">
+                <div class="w3-container">
+                    <h4>Thai Basil Chicken</h4>
+                    <p class="w3-text-grey">Spicy basil stir-fry with jasmine rice</p>
+                    <p><strong>$13.00</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DINNER -->
+    <h3 class="w3-center w3-padding-32">Dinner</h3>
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Green Curry.jpg" alt="Green Curry">
+                <div class="w3-container">
+                    <h4>Green Curry</h4>
+                    <p class="w3-text-grey">Coconut milk, bamboo shoots, basil</p>
+                    <p><strong>$15.00</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Massaman Curry.jpg" alt="Massaman Curry">
+                <div class="w3-container">
+                    <h4>Massaman Curry</h4>
+                    <p class="w3-text-grey">Slow-cooked curry with potatoes and peanuts</p>
+                    <p><strong>$16.00</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-third">
+            <div class="w3-card w3-white">
+                <img src="images/Panang Curry.jpg" alt="Panang Curry">
+                <div class="w3-container">
+                    <h4>Panang Curry</h4>
+                    <p class="w3-text-grey">Rich curry with kaffir lime leaves</p>
+                    <p><strong>$16.50</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY / SLIDESHOW -->
+<section id="gallery" class="w3-container w3-padding-64 w3-light-grey">
+    <h2 class="w3-center">Gallery</h2>
+    <div class="w3-content w3-display-container gallery-container" style="max-width:900px; margin:auto;">
+        <img class="mySlides w3-animate-fading" src="images/Pad Thai.jpg" alt="Pad Thai" style="width:100%; border-radius:16px;">
+        <img class="mySlides w3-animate-fading" src="images/Green Curry.jpg" alt="Green Curry" style="width:100%; border-radius:16px;">
+        <img class="mySlides w3-animate-fading" src="images/Massaman Curry.jpg" alt="Massaman Curry" style="width:100%; border-radius:16px;">
+        <img class="mySlides w3-animate-fading" src="images/Papaya Salad.jpg" alt="Papaya Salad" style="width:100%; border-radius:16px;">
+        <button class="w3-button w3-display-left w3-green" onclick="plusDivs(-1)">❮</button>
+        <button class="w3-button w3-display-right w3-green" onclick="plusDivs(1)">❯</button>
+    </div>
+</section>
+
+<script>
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// auto-slide
+setInterval(function(){ plusDivs(1); }, 5000);
+</script>
+
+<!-- CONTACT -->
+<section id="contact" class="w3-container w3-padding-64 w3-white w3-center">
+    <h2>Contact Us</h2>
+    <p>📍 119 Sullivan St, New York, NY 10012</p>
+    <p>📞 (929)-257-4410</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="w3-container w3-center fancy-nav w3-padding-16">
+    <p>&copy; 2025 Jade Thai Kitchen</p>
+</footer>
+
+</body>
+</html>
+

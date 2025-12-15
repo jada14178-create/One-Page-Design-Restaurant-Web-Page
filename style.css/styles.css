@@ -1,0 +1,125 @@
+/* =======================
+   FONTS & BODY
+======================= */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #2d4f2d; /* dark green text */
+    background-color: #f5f8f5; /* light green background */
+}
+
+/* HEADINGS */
+h1, h2, h3, h4 {
+    font-family: "Playfair Display", serif;
+    color: #1a3d1a; /* deeper green */
+    letter-spacing: 1px;
+}
+
+/* =======================
+   HERO TEXT
+======================= */
+header h1, header p {
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+/* =======================
+   NAVIGATION BAR
+======================= */
+.w3-bar {
+    background: linear-gradient(90deg, #2d4f2d, #4f7a4f) !important; /* green gradient */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.w3-bar a {
+    color: #ffffff !important;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.w3-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #dff0d8; /* light green underline */
+    transition: width 0.3s ease-in-out;
+}
+
+.w3-bar a:hover::after {
+    width: 100%;
+}
+
+.w3-bar a:hover {
+    color: #dff0d8 !important;
+    transform: translateY(-2px);
+    background-color: transparent !important;
+}
+
+/* =======================
+   GALLERY IMAGES
+======================= */
+.gallery-container img {
+    border-radius: 16px;
+    max-height: 420px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.03);
+}
+
+/* =======================
+   MENU CARDS
+======================= */
+.w3-card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background-color: #ffffff; /* white cards */
+}
+
+.w3-card img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.w3-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.w3-card:hover h4 {
+    color: #2d4f2d; /* dark green title on hover */
+}
+
+/* =======================
+   FOOTER
+======================= */
+footer {
+    background-color: #2d4f2d !important; /* dark green footer */
+    color: #ffffff;
+    text-align: center;
+    padding: 24px 0;
+}
+
+/* =======================
+   MOBILE MENU (optional)
+======================= */
+#mobileMenu a:hover {
+    background-color: #4f7a4f !important;
+    color: #ffffff !important;
+}
+
+/* =======================
+   GENERAL TRANSITIONS
+======================= */
+* {
+    transition: all 0.3s ease;
+}
